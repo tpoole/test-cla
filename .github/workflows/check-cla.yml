@@ -1,12 +1,11 @@
 name: check-CLA
-on: [pull_request]
+on: [pull_request_target]
 jobs:
   check-cla:
     runs-on: ubuntu-latest
     env:
       PR_NUMBER: ${{ github.event.number }}
     steps:
-      #echo ${{ github.event.number }}
       - name: check-CLA
         run: |
           import urllib.request
