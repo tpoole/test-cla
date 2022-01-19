@@ -31,6 +31,7 @@ body:
         - Linux
         - iOS
         - Android
+        - Other
     validations:
       required: true
   - type: textarea
@@ -46,11 +47,11 @@ body:
       description: What type of machine do you see the bug on?
       multiple: true
       options:
-        - 32-bit
-        - 64-bit
         - x86_64
         - ARM
         - Other
+        - 64-bit
+        - 32-bit
     validations:
       required: true
   - type: textarea
@@ -79,8 +80,8 @@ body:
   - type: checkboxes
     id: developbranch
     attributes:
-      label: Tested against the tip of JUCE development
-      description: We have often already fixed bugs on our `develop` branch. Please confirm that you have tested with the latest commit.
+      label: Tested against the `develop` branch
+      description: We have often already fixed bugs on our `develop` branch. Please confirm if you have tested with the latest commit.
       options:
         - label: I can reproduce the bug on the `develop` branch
   - type: checkboxes
