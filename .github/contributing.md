@@ -16,13 +16,15 @@ respond accordingly.
 
 You must sign the [JUCE Contribution Licence Agreement](https://cla.juce.com/)
 before your code can be considered for inclusion into JUCE. You will get build
-failures if the authour or committer of any commits in this PR has not signed
-the Contribution Licence Agreement.
+failures if the author or committer of any commits in your Pull Request (PR)
+has not signed the Contribution Licence Agreement.
 
 This repository contains just the public branches of the main JUCE development
-repository. Any work in this PR will not be merged into any other branch in
+repository. Any work in your PR will not be merged into any other branch in
 this repository, but will instead be reproduced in our private repository. We
 may refactor and rewite any code submitted to us in PRs.
+
+All work should be based on our `develop` branch.
 
 #### Code Of Conduct
 
