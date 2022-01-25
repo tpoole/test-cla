@@ -80,7 +80,8 @@ body:
       label: Tested against the `develop` branch
       description: We have often already fixed bugs on our `develop` branch. Please confirm if you have tested with the latest commit.
       options:
-        - label: I can reproduce the bug on the `develop` branch
+        - label: The bug is present on the `develop` branch
+        - label: I have not tested the `develop` branch
   - type: checkboxes
     id: terms
     attributes:
