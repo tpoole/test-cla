@@ -19,19 +19,19 @@ body:
       label: What is the expected behaviour?
     validations:
       required: true
-  - type: dropdown
+  - type: checkboxes
     id: os
     attributes:
       label: Operating system
-      description: What operating system do you see the bug on?
+      description: What operating systems do you see the bug on?
       multiple: true
       options:
-        - Windows
-        - macOS
-        - Linux
-        - iOS
-        - Android
-        - Other
+        - label: Windows
+        - label: macOS
+        - label: Linux
+        - label: iOS
+        - label: Android
+        - label: Other
     validations:
       required: true
   - type: textarea
@@ -40,43 +40,41 @@ body:
       label: What version of the operating system?
     validations:
       required: true
-  - type: dropdown
+  - type: checkboxes
     id: architecture
     attributes:
       label: Architecture
-      description: What type of machine do you see the bug on?
-      multiple: true
+      description: What type of machines do you see the bug on?
       options:
-        - x86_64
-        - ARM
-        - Other
-        - 64-bit
-        - 32-bit
+        - label: x86_64
+        - label: ARM
+        - label: Other
+        - label: 64-bit
+        - label: 32-bit
     validations:
       required: true
   - type: textarea
     id: stacktrace
     attributes:
       label: Stacktrace
-      description: Please copy and paste any relevant stack trce. This will be automatically formatted into code, so no need for backticks.
+      description: Please copy and paste any relevant stack trace. This will be automatically formatted into code, so no need for backticks.
       render: shell
-  - type: dropdown
+  - type: checkboxes
     id: pluginformat
     attributes:
       label: Plug-in format (if applicable)
-      multiple: true
       options:
-        - VST2
-        - VST3
-        - AU
-        - AUv3
-        - AAX
-        - LV2
-        - Standalone
+        - label: VST2
+        - label: VST3
+        - label: AU
+        - label: AUv3
+        - label: AAX
+        - label: LV2
+        - label: Standalone
   - type: textarea
-    id: pluginhost
+    id: pluginhosts
     attributes:
-      label: Plug-in host application (DAW) (if applicable)
+      label: Plug-in host applications (DAW) (if applicable)
   - type: checkboxes
     id: developbranch
     attributes:
