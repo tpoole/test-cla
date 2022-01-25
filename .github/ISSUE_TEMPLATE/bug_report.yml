@@ -24,7 +24,6 @@ body:
     attributes:
       label: Operating system
       description: What operating systems do you see the bug on?
-      multiple: true
       options:
         - label: Windows
         - label: macOS
